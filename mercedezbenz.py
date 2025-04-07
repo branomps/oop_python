@@ -9,8 +9,8 @@ class MercedezBenz:
     def drive(self):
         return f"A Mercedez is driving. It is {self}\n"
     
-    def auto_drive():
+    def auto_drive(self):
         return "Auto is driving"
     
 m1 = MercedezBenz("red")
-print(f"The Mercedez is: {m1}")
+print(f"The Mercedez is: {m1.color}")
