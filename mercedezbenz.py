@@ -1,7 +1,14 @@
+class Tire:
+    def __init__(self,kind,distance_covered):
+        self.kind = kind
+        self.distance_covered = distance_covered
+
+
 class MercedezBenz:
     doors=4
     model='G'
     wheels=4
+    tires = [Tire("operational", 10 ) for i in range(4)]
 
     def __init__(self,color):
         self.color = color
@@ -23,3 +30,5 @@ print(f"The Mercedez is: {m1.color}")
 m2 = MercedezBenz("blue")
 
 print(m2.auto_drive())
+
+print(m2.tires ,"\n")
